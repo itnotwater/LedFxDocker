@@ -4,6 +4,7 @@ services:
   ledfx:
     image: ledfx:latest
     container_name: ledfx
+    hostname: LedFx #This will be used to name snapclient
     build:
       context: .
     environment: 
