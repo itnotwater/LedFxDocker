@@ -26,6 +26,7 @@ services:
   ledfx:
     image: shirom/ledfx 
     container_name: ledfx
+    hostname: LedFx #This is used to name snapclient
     environment: 
       - HOST=192.168.0.15
       - FORMAT=-r 44100 -f S16_LE -c 2
