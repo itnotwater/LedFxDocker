@@ -13,7 +13,7 @@ if [[ -v FORMAT ]]; then
 fi
 
 if [[ -v HOST ]]; then
-    snapclient --host "$HOST" &
+    snapclient --host "$HOST" --hostID LedFx &> /var/log/snapclient.log &
 fi
 
 if [[ -v SQUEEZE ]]; then
